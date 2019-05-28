@@ -46,7 +46,7 @@ public class MainActivity extends NavigationBarActivity {
                         list.add(User.parse(arr.getJSONObject(i)));
                     }
 
-                    UserAdapter adapter = new UserAdapter(MainActivity.this, R.layout.list_view_item, list);
+                    UserAdapter adapter = new UserAdapter(MainActivity.this, R.layout.msg_list_item_view, list);
                     listView.setAdapter(adapter);
 
 

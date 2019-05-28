@@ -1,11 +1,9 @@
 package tech.poechiang.app.poechat.model;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.LayoutRes;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -51,10 +49,10 @@ public class UserAdapter extends BaseAdapter {
             convertView = mInflater.inflate(itemResId, null);
 
             //对viewHolder的属性进行赋值
-            viewHolder.photo = (ImageView) convertView.findViewById(R.id.photo);
-            viewHolder.nick = (TextView) convertView.findViewById(R.id.nick);
-            viewHolder.msg = (TextView) convertView.findViewById(R.id.msg);
-            viewHolder.date = (TextView) convertView.findViewById(R.id.date);
+            viewHolder.photo = (ImageView) convertView.findViewById(R.id.mli_photo_view);
+            viewHolder.nick = (TextView) convertView.findViewById(R.id.mli_nick_view);
+            viewHolder.msg = (TextView) convertView.findViewById(R.id.mli_msg_view);
+            viewHolder.date = (TextView) convertView.findViewById(R.id.mli_date_view);
 
 
 

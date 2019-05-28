@@ -34,7 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#FFFFFF"
-            tools:listitem="@layout/list_view_item" />
+            tools:listitem="@layout/msg_list_item_view" />
 
     </LinearLayout>
 
