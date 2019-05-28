@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#ededed</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <color name="colorWindowBackground">#ededed</color>
+    <color name="colorStatusBarBack">#ededed</color>
+    <color name="colorActionBarBack">#ededed</color>
+    <color name="colorActionBarFore">#000000</color>
+    <color name="colorNavigationBarBack">#F7F7F7</color>
+    <color name="colorPageBack">#00ededed</color>
+    <color name="colorFieldBack">#FFFFFFFF</color>
+    <color name="colorField">#000000</color>
+    <!--<color name="colorStatusBar">#F5F5F5</color>-->
+</resources>

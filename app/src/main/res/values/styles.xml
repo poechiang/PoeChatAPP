@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base"/>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+
+    <item name="android:windowBackground">@color/colorWindowBackground</item>
+    <item name="android:windowContentOverlay">@null</item>
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+
+
+
+
+
+
+    <!--<style name="AppTheme" parent="@android:style/Theme.Holo.Light">-->
+        <!--<item name="android:actionBarStyle">@style/AppTheme.ActionBar</item>-->
+        <!--<item name="android:windowBackground">@color/colorWindowBackground</item>-->
+        <!--<item name="android:windowContentOverlay">@null</item>-->
+
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="AppTheme.ActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">-->
+        <!--<item name="android:background">@color/colorActionBarBack</item>-->
+        <!--<item name="titleTextStyle">@style/AppTheme.ActionBar.Title</item>-->
+    <!--</style>-->
+
+    <!--<style name="AppTheme.ActionBar.Title" parent="@android:style/Widget.Holo.Light.ActionBar">-->
+        <!--<item name="android:textColor">#FF0000</item>-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+    <!--</style>-->
+
+
+</resources>
