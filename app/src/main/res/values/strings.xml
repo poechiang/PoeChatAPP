@@ -9,4 +9,5 @@
     <string name="title_new_friend">添加朋友</string>
     <string name="title_scan">扫一扫</string>
     <string name="title_pay_rec">收付款</string>
+    <string name="title_search">搜索</string>
 </resources>

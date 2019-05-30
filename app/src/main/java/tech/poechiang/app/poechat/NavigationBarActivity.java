@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.view.MenuItem;
+import android.view.View;
+
 
 public abstract class NavigationBarActivity extends PoeActivity {
 
@@ -29,24 +31,36 @@ public abstract class NavigationBarActivity extends PoeActivity {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             restoreNavBarItemIcon();
+            restoreNavPageVisibility();
             MenuItem mi = navView.getMenu().findItem(item.getItemId());
             switch (item.getItemId()) {
                 case R.id.nav_msg:
                     mi.setIcon(R.drawable.ic_msg_sel);
+                    findViewById(R.id.msgpanel).setVisibility(View.VISIBLE);
                     return true;
                 case R.id.nav_find:
                     mi.setIcon(R.drawable.ic_find_sel);
+                    findViewById(R.id.findpanel).setVisibility(View.VISIBLE);
                     return true;
                 case R.id.nav_contact:
                     mi.setIcon(R.drawable.ic_contact_sel);
+                    findViewById(R.id.contactpanel).setVisibility(View.VISIBLE);
                     return true;
                 case R.id.nav_my:
                     mi.setIcon(R.drawable.ic_my_sel);
+                    findViewById(R.id.mypanel).setVisibility(View.VISIBLE);
                     return true;
             }
             return false;
         }
     };
+
+    protected void restoreNavPageVisibility(){
+        findViewById(R.id.msgpanel).setVisibility(View.INVISIBLE);
+        findViewById(R.id.contactpanel).setVisibility(View.INVISIBLE);
+        findViewById(R.id.findpanel).setVisibility(View.INVISIBLE);
+        findViewById(R.id.mypanel).setVisibility(View.INVISIBLE);
+    }
 
     private void restoreNavBarItemIcon(){
         navView.getMenu().findItem(R.id.nav_msg).setIcon(R.drawable.ic_msg_unsel);

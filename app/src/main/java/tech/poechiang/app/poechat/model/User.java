@@ -2,8 +2,11 @@ package tech.poechiang.app.poechat.model;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.ImageView;
 
@@ -23,16 +26,16 @@ import tech.poechiang.app.poechat._interface.IHttpCompleteListener;
 
 public class User extends Model {
     private String mPhoto = null;
+    private @DrawableRes int mPhotoRes;
+
     private String mNick;
-    private String mMsg;
-    private String mDate;
     private Bitmap mPhotoBitmap =null;
-    public  User(JSONObject data) throws JSONException {
+    public  User(@Nullable JSONObject data) throws JSONException {
         super(data);
-        mPhoto = data.getString("photo");
-        mNick = data.getString("nick");
-        mMsg = data.getString("msg");
-        mDate = "2019-05-10";
+        if(data!=null) {
+            mPhoto = data.getString("photo");
+            mNick = data.getString("nick");
+        }
     }
     public Bitmap getPhoto(){
         if (mPhotoBitmap==null && mPhoto!=null){
@@ -48,18 +51,18 @@ public class User extends Model {
         }
         return mPhotoBitmap;
     }
-
+    public @DrawableRes int getPhotoRes(){
+        return mPhotoRes;
+    }
+    public void setPhoto(@DrawableRes int photo){
+        mPhotoRes = photo;
+    }
     public String getNick(){
         return mNick;
     }
-    public String getMsg(){
-        return mMsg;
-    }
-    public String getDate(){
-        return mDate;
-    }
-    public void setDate(String d){
-        mDate = d;
+
+    public void setNick(String nick){
+        mNick = nick;
     }
     public static User parse(JSONObject data) {
         try {
