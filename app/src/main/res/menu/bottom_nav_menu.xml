@@ -19,10 +19,5 @@
         android:id="@+id/nav_my"
         android:icon="@drawable/ic_my_unsel"
         android:title="@string/title_my" />
-    <item
-        android:id="@+id/action_more"
-        app:showAsAction="collapseActionView"
-        android:icon="@drawable/ic_my_unsel"
-        android:title="@string/title_my" />
 
 </menu>

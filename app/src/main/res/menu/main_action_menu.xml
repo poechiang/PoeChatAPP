@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mam_new_group"
+        android:icon="@drawable/ic_group_msg"
+        android:title="@string/title_new_group"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mam_new_friend"
+        android:icon="@drawable/ic_new_friend"
+        android:title="@string/title_new_friend"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mam_scan"
+        android:icon="@drawable/ic_scan"
+        android:title="@string/title_scan"
+        app:showAsAction="collapseActionView" />
+    <item
+        android:id="@+id/mam_pay"
+        android:icon="@drawable/ic_pay_rec"
+        android:title="@string/title_pay_rec"
+        app:showAsAction="collapseActionView" />
+</menu>
