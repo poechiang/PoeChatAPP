@@ -4,6 +4,8 @@ import android.os.Bundle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 import tech.poechiang.app.poechat.core.StatusBarTheme;
 
@@ -97,4 +99,10 @@ public abstract class PoeActivity extends AppCompatActivity {
      */
     protected abstract int getLayoutId();
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_action_menu, menu);
+        return true;
+    }
 }
